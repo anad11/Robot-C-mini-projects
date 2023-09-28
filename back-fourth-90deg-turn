@@ -1,0 +1,40 @@
+task main ()
+{
+  displayString (5, "Ready to test");
+  waitiMsec (50);
+  
+  // Gyro Configuration Code
+  SensorType [S4] =sensorEV3_Gyro;
+  waitiMsec (50);
+  SensorMode[S4]-modeEV3Gyro_Calibration:
+  waitiMsec (50);
+  SensorMode [S4]-modeEv3Gyro RateAndAngle; waitiMsec (50);
+  
+  nMotorEncoder (motorA) =0;
+  
+  motor [motorAl-motor [motozD]=50; 
+  wait1Msec (2000);
+
+  motor [motorA]-motor motorD]=0;
+  
+  waitiMsec (1000) ;
+  
+  motor [motorA]-motor [motorD]=-25;
+  while (nMotorEncoder [motorA]< nMotorEncoder [motorA] * 360 / (2*pI*2.75)) 
+  ()
+  
+  waitiMsec (1000) ;
+
+  resetGyro (S4) ;
+  
+  motor [motorA]=-25; 
+  motor [motorD]=25;
+  while (getGyroDegrees ($4) < (90) )
+  
+  // Stop movement of robot motor 
+  motor[motorA] = motor[motor D] = 0
+
+  // Wait 10 seconds to end program 
+wait1Msec(10000);
+
+}
